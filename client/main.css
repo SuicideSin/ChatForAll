@@ -1,0 +1,24 @@
+body{
+    background-color: powderblue;
+    font-family: sans-serif;
+}
+
+#signDivBack{
+    text-align:center;
+    background-color: #22aef6;
+    color: #2d3b71;
+}
+
+#chatDiv{
+    background-color: #22aeff;
+}
+
+.container {
+    font-size: 15px;
+    min-height: 500px;
+    width: 100%;
+    background: #A658DF;
+    display: grid;
+    grid-template-columns: 50% 148%;
+    grid-gap: 10px;
+}

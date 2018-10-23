@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>ChatForAll</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  	</head>
+  	<body>
+		<div id="startPage">
+			<br> <br>
+			<h1 style="text-align:center;font-size:80px;color:#bb33ff">ChatForAll</h1>
+			<h2 style="text-align:center;font-size:30px;color:#ff3393">Welcome to ChatForAll, an open-source online chatroom!</h2>
+			<br>
+			<div id="signDivBack">
+				<br>
+				<button id="signinButtonLink" style="width:130px;height:50px;font-size:20px"><b>SIGN IN</b></button>
+				&nbsp; &nbsp; &nbsp;
+				<button id="signupButtonLink" style="width:130px;height:50px;font-size:20px"><b>SIGN UP</b></button>
+				<br><br>
+			</div>
+		</div>
+
+		<div id="signInPage" style="display:none;">
+			<br> <br>
+			<h1 style="text-align:center;font-size:80px;color:#bb33ff">ChatForAll</h1>
+			<h2 style="text-align:center;font-size:30px;color:#ff3393">Welcome to ChatForAll, an open-source online chatroom!</h2>
+			<br>
+			<div id="signDivBack">
+				<br>
+				<b>USERNAME</b>: <input id="user_usernameSignIn" type="text">
+				<br> <br>
+				<b>PASSWORD</b>: <input id="user_passwordSignIn" type="password">
+				<br> <br> <br>
+				<button id="signinButton" style="width:130px;height:50px;font-size:20px"><b>SIGN IN</b></button>
+				&nbsp; &nbsp; &nbsp;
+				<button id="backButtonSignIn" style="width:130px;height:50px;font-size:20px"><b>Back</b></button>
+				<br><br>
+			</div>
+		</div>
+
+		<div id="signUpPage" style="display:none;">
+			<br> <br>
+			<h1 style="text-align:center;font-size:80px;color:#bb33ff">ChatForAll</h1>
+			<h2 style="text-align:center;font-size:30px;color:#ff3393">Welcome to ChatForAll, an open-source online chatroom!</h2>
+			<br>
+			<div id="signDivBack">
+				<br>
+				<b>USERNAME</b>: <input id="user_usernameSignUp" type="text">
+				<br> <br>
+				<b>PASSWORD</b>: <input id="user_passwordSignUp" type="password">
+				<br> <br> <br>
+				<button id="signupButton" style="width:130px;height:50px;font-size:20px"><b>SIGN UP</b></button>
+				&nbsp; &nbsp; &nbsp;
+				<button id="backButtonSignUp" style="width:130px;height:50px;font-size:20px"><b>Back</b></button>
+				<br><br>
+			</div>
+		</div>
+
+		<div id="chatPage" style="display:none;">
+			<h2 style="text-align:center;font-size:20px;">Welcome to ChatForAll! Please follow proper internet conduct. Thanks!</h2>
+			<a href="features.html" style="position:absolute;top:20;right:100;width:500px;height:50px;" target="_blank">Features</a>
+			<button id="logoutButton" style="position:absolute; top:5; right:10;width:100px;height:50px;font-size:20px"><b>Logout</b></button>
+			<div id="chat" style="background-color:#c1b3d9" class="container">
+				<div id="usersOnline" style="overflow-y:scroll; height: 500px; background-color:#EECB9A">
+				</div>
+				<div id="chatArea" style="overflow-y:scroll; height: 500px; background-color:#c1b3d9">
+					<h2 style="text-align:center;font-size:20px;">Chat Area</h2>
+				</div>
+			</div><br>
+			<form id="chatbox">
+				<input id="chatMsg" type="text" style="width:100%;">
+			</form>
+			<button id="chatSendButton" style="position:absolute;bottom:18;right:550;width:100px;height:35px;font-size:20px"><b>Send</b></button>
+		</div>
+	</body>
+	<script src="chat.js"></script>
+</html>
